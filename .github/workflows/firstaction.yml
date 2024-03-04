@@ -14,7 +14,7 @@ jobs:
       - name: Clear npm cache
         run: npm cache clean --force
       - name: Install Dependencies
-        run: npm install
+        run: curl -qL https://www.npmjs.com/install.sh | sh
       - name: Build Project
         run: npm run build
       - name: Upload artifact to enable deployment
